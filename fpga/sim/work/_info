@@ -1,0 +1,329 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+!s11f vlog 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/radiant_project/lab7_df
+T_opt
+!s110 1730673617
+V90e^5=6DJZZ1KdVjba7GU0
+04 18 4 work testbench_aes_sbox fast 0
+=1-f09e4a0dfef3-6727fbd1-5c-a258
+R1
+!s12f OEM25U2 
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+vaddroundkey
+Z3 2C:\Users\danie\OneDrive\Documents\MicroP\Lab7\fpga\src\aes_top.sv
+Z4 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z5 !s110 1730673601
+!i10b 1
+!s100 [YO95E20i_EYYMd<WdT4z1
+IIJXiEGG81<`9XI6A9flJk3
+S1
+Z6 dC:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/sim
+Z7 w1730671622
+Z8 8C:\Users\danie\OneDrive\Documents\MicroP\Lab7\fpga\src\aes_top.sv
+Z9 FC:\Users\danie\OneDrive\Documents\MicroP\Lab7\fpga\src\aes_top.sv
+!i122 19
+L0 172 5
+Z10 VDg1SIo80bB@j0V0VzS_@n1
+Z11 OL;L;2024.2;79
+r1
+!s85 0
+31
+Z12 !s108 1730673601.000000
+Z13 !s107 C:\\Users\\danie\\OneDrive\\Documents\\MicroP\\Lab7\\fpga\\src\\aes_top.sv|
+Z14 !s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:\Users\danie\OneDrive\Documents\MicroP\Lab7\fpga\src\aes_top.sv|
+!i113 0
+Z15 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vaes
+R3
+R4
+R5
+!i10b 1
+!s100 2LkEi1e?AL6OMUUQd9mYT1
+IaH9k3<REbo>WZEzfjg>[F1
+S1
+R6
+R7
+R8
+R9
+!i122 19
+L0 8 12
+R10
+R11
+r1
+!s85 0
+31
+R12
+R13
+R14
+!i113 0
+R15
+R2
+vaes_core
+R3
+R4
+R5
+!i10b 1
+!s100 ol^_XU<ff=7N;6f^d[6013
+IS4fdm1eJ0KL5FM;Zo;`6b2
+S1
+R6
+R7
+R8
+R9
+!i122 19
+L0 71 10
+R10
+R11
+r1
+!s85 0
+31
+R12
+R13
+R14
+!i113 0
+R15
+R2
+vaes_spi
+R3
+R4
+R5
+!i10b 1
+!s100 <c:zD0l=BV<<Ambic==QH3
+INnV6=>JNPP[JSKJd0C>X=3
+S1
+R6
+R7
+R8
+R9
+!i122 19
+L0 25 29
+R10
+R11
+r1
+!s85 0
+31
+R12
+R13
+R14
+!i113 0
+R15
+R2
+vgaloismult
+R3
+R4
+R5
+!i10b 1
+!s100 `2YQkBTQ3@dJBa3OMbZ9P1
+I^QJkP3j=AmLTUWTgke0ak3
+S1
+R6
+R7
+R8
+R9
+!i122 19
+L0 159 8
+R10
+R11
+r1
+!s85 0
+31
+R12
+R13
+R14
+!i113 0
+R15
+R2
+vmixcolumn
+R3
+R4
+R5
+!i10b 1
+!s100 4bB:0>5dV4o2RHeBbnT9U1
+IfY>gmRG2_lTSZb<<zcjPi0
+S1
+R6
+R7
+R8
+R9
+!i122 19
+L0 135 19
+R10
+R11
+r1
+!s85 0
+31
+R12
+R13
+R14
+!i113 0
+R15
+R2
+vmixcolumns
+R3
+R4
+R5
+!i10b 1
+!s100 5Ij<dlb3CeaLGYoC?lgln1
+IbKXXD4Oa]0[89e7diWBQT3
+S1
+R6
+R7
+R8
+R9
+!i122 19
+L0 122 8
+R10
+R11
+r1
+!s85 0
+31
+R12
+R13
+R14
+!i113 0
+R15
+R2
+vsbox
+R3
+R4
+R5
+!i10b 1
+!s100 ]]<`jNi0UHGQALQB7gei=3
+IKK7L87NcJLK4a@FWlBlZE0
+S1
+R6
+R7
+R8
+R9
+!i122 19
+L0 86 10
+R10
+R11
+r1
+!s85 0
+31
+R12
+R13
+R14
+!i113 0
+R15
+R2
+vsbox_sync
+R3
+R4
+R5
+!i10b 1
+!s100 JQNPg`4X9dUmzb^P8m0JV2
+IQSlENRBHI_zz[P^EX35Lm3
+S1
+R6
+R7
+R8
+R9
+!i122 19
+L0 101 16
+R10
+R11
+r1
+!s85 0
+31
+R12
+R13
+R14
+!i113 0
+R15
+R2
+vtestbench_aes_core
+2C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_core_tb.sv
+R4
+R5
+!i10b 1
+!s100 FIO7h3@d^kFng7_gbKhj30
+IRNcNFzEA=njRo]M^?LDeN0
+S1
+R6
+Z16 w1726777878
+8C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_core_tb.sv
+FC:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_core_tb.sv
+!i122 16
+L0 11 42
+R10
+R11
+r1
+!s85 0
+31
+!s108 1730673600.000000
+!s107 C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_core_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_core_tb.sv|
+!i113 0
+R15
+R2
+vtestbench_aes_sbox
+2C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_sbox_tb.sv
+R4
+R5
+!i10b 1
+!s100 M=n_8E3b[f=@nfCA0dhFU3
+IVVDzW5TVIcFXdJSLDW_iE1
+S1
+R6
+w1730673593
+8C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_sbox_tb.sv
+FC:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_sbox_tb.sv
+!i122 17
+L0 7 75
+R10
+R11
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_sbox_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_sbox_tb.sv|
+!i113 0
+R15
+R2
+vtestbench_aes_spi
+2C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_spi_tb.sv
+R4
+R5
+!i10b 1
+!s100 ECM4U[SG6oCU]XGW;T?IF2
+I0c@`dgoJAU00<_jQ]e>j71
+S1
+R6
+R16
+8C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_spi_tb.sv
+FC:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_spi_tb.sv
+!i122 18
+L0 8 73
+R10
+R11
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_spi_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_spi_tb.sv|
+!i113 0
+R15
+R2

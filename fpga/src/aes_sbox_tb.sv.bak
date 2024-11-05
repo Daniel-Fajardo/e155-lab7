@@ -65,14 +65,6 @@ module testbench_aes_sbox();
       #22;
       a = input_bytes_2d[0][7:0];
       #22;
-      a = input_bytes_2d[1][31:24];
-      #22;
-      a = input_bytes_2d[1][23:16];
-      #22;
-      a = input_bytes_2d[1][15:8];
-      #22;
-      a = input_bytes_2d[1][7:0];
-      #22;
       $stop();
     end
 

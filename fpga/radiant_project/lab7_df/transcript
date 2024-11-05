@@ -1,0 +1,204 @@
+# Reading pref.tcl
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 win64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading project lab7_df
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_top.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.testbench_aes_sbox -voptargs=+acc
+# vsim -gui work.testbench_aes_sbox -voptargs="+acc" 
+# Start time: 14:10:47 on Nov 03,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_aes_sbox(fast)
+# Loading work.sbox_sync(fast)
+add wave -position end  sim:/testbench_aes_sbox/clk
+add wave -position end  sim:/testbench_aes_sbox/load
+add wave -position end  sim:/testbench_aes_sbox/done
+add wave -position end  sim:/testbench_aes_sbox/sck
+add wave -position end  sim:/testbench_aes_sbox/sdi
+add wave -position end  sim:/testbench_aes_sbox/sdo
+add wave -position end  sim:/testbench_aes_sbox/key
+add wave -position end  sim:/testbench_aes_sbox/plaintext
+add wave -position end  sim:/testbench_aes_sbox/cyphertext
+add wave -position end  sim:/testbench_aes_sbox/expected
+add wave -position end  sim:/testbench_aes_sbox/comb
+add wave -position end  sim:/testbench_aes_sbox/delay
+add wave -position end  sim:/testbench_aes_sbox/input_bytes_2d
+add wave -position end  sim:/testbench_aes_sbox/input_bytes_1d
+add wave -position end  sim:/testbench_aes_sbox/output_bytes_2d
+add wave -position end  sim:/testbench_aes_sbox/output_bytes_1d
+add wave -position end  sim:/testbench_aes_sbox/a
+add wave -position end  sim:/testbench_aes_sbox/y
+run 10000
+# ** Warning: (vsim-7) Failed to open readmem file "sbox.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_top.sv(110)
+#    Time: 0 ns  Iteration: 0  Instance: /testbench_aes_sbox/dut
+# ** Note: $stop    : C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_sbox_tb.sv(68)
+#    Time: 880 ns  Iteration: 0  Instance: /testbench_aes_sbox
+# Break in Module testbench_aes_sbox at C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_sbox_tb.sv line 68
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_top.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui -voptargs=+acc work.testbench_aes_sbox
+# End time: 14:13:59 on Nov 03,2024, Elapsed time: 0:03:12
+# Errors: 0, Warnings: 9
+# vsim -gui -voptargs="+acc" work.testbench_aes_sbox 
+# Start time: 14:14:00 on Nov 03,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.testbench_aes_sbox(fast)
+# Loading work.sbox_sync(fast)
+# A time value could not be extracted from the current line
+add wave -position end  sim:/testbench_aes_sbox/clk
+add wave -position end  sim:/testbench_aes_sbox/load
+add wave -position end  sim:/testbench_aes_sbox/done
+add wave -position end  sim:/testbench_aes_sbox/sck
+add wave -position end  sim:/testbench_aes_sbox/sdi
+add wave -position end  sim:/testbench_aes_sbox/sdo
+add wave -position end  sim:/testbench_aes_sbox/key
+add wave -position end  sim:/testbench_aes_sbox/plaintext
+add wave -position end  sim:/testbench_aes_sbox/cyphertext
+add wave -position end  sim:/testbench_aes_sbox/expected
+add wave -position end  sim:/testbench_aes_sbox/comb
+add wave -position end  sim:/testbench_aes_sbox/delay
+add wave -position end  sim:/testbench_aes_sbox/input_bytes_2d
+add wave -position end  sim:/testbench_aes_sbox/input_bytes_1d
+add wave -position end  sim:/testbench_aes_sbox/output_bytes_2d
+add wave -position end  sim:/testbench_aes_sbox/output_bytes_1d
+add wave -position end  sim:/testbench_aes_sbox/a
+add wave -position end  sim:/testbench_aes_sbox/y
+run 10000
+# ** Warning: (vsim-7) Failed to open readmem file "sbox.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_top.sv(110)
+#    Time: 0 ns  Iteration: 0  Instance: /testbench_aes_sbox/dut
+# ** Note: $stop    : C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_sbox_tb.sv(68)
+#    Time: 880 ns  Iteration: 0  Instance: /testbench_aes_sbox
+# Break in Module testbench_aes_sbox at C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_sbox_tb.sv line 68
+run 10000000
+# Causality operation skipped due to absence of debug database file
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.testbench_aes_sbox(fast)
+# Loading work.sbox_sync(fast)
+run 2500
+# ** Warning: (vsim-7) Failed to open readmem file "sbox.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_top.sv(110)
+#    Time: 0 ns  Iteration: 0  Instance: /testbench_aes_sbox/dut
+# ** Note: $stop    : C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_sbox_tb.sv(68)
+#    Time: 880 ns  Iteration: 0  Instance: /testbench_aes_sbox
+# Break in Module testbench_aes_sbox at C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_sbox_tb.sv line 68
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_top.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui -voptargs=+acc work.testbench_aes_sbox
+# End time: 14:23:43 on Nov 03,2024, Elapsed time: 0:09:43
+# Errors: 0, Warnings: 3
+# vsim -gui -voptargs="+acc" work.testbench_aes_sbox 
+# Start time: 14:23:43 on Nov 03,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.testbench_aes_sbox(fast)
+# Loading work.sbox_sync(fast)
+run 2500
+# ** Note: $stop    : C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_sbox_tb.sv(68)
+#    Time: 880 ns  Iteration: 0  Instance: /testbench_aes_sbox
+# Break in Module testbench_aes_sbox at C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_sbox_tb.sv line 68
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.testbench_aes_sbox(fast)
+# Loading work.sbox_sync(fast)
+run 2500
+# ** Note: $stop    : C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_sbox_tb.sv(68)
+#    Time: 880 ns  Iteration: 0  Instance: /testbench_aes_sbox
+# Break in Module testbench_aes_sbox at C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_sbox_tb.sv line 68
+run 7500
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.testbench_aes_sbox(fast)
+# Loading work.sbox_sync(fast)
+run 10000
+# ** Note: $stop    : C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_sbox_tb.sv(68)
+#    Time: 880 ns  Iteration: 0  Instance: /testbench_aes_sbox
+# Break in Module testbench_aes_sbox at C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_sbox_tb.sv line 68
+vsim -gui -voptargs=+acc work.testbench_aes_sbox
+# End time: 14:27:50 on Nov 03,2024, Elapsed time: 0:04:07
+# Errors: 0, Warnings: 1
+# vsim -gui -voptargs="+acc" work.testbench_aes_sbox 
+# Start time: 14:27:50 on Nov 03,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.testbench_aes_sbox(fast)
+# Loading work.sbox_sync(fast)
+run 10000
+# ** Note: $stop    : C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_sbox_tb.sv(68)
+#    Time: 880 ns  Iteration: 0  Instance: /testbench_aes_sbox
+# Break in Module testbench_aes_sbox at C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_sbox_tb.sv line 68
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.testbench_aes_sbox(fast)
+# Loading work.sbox_sync(fast)
+run 10000
+# ** Note: $stop    : C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_sbox_tb.sv(68)
+#    Time: 880 ns  Iteration: 0  Instance: /testbench_aes_sbox
+# Break in Module testbench_aes_sbox at C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_sbox_tb.sv line 68
+run 10000
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_top.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui -voptargs=+acc work.testbench_aes_sbox
+# End time: 14:31:57 on Nov 03,2024, Elapsed time: 0:04:07
+# Errors: 0, Warnings: 2
+# vsim -gui -voptargs="+acc" work.testbench_aes_sbox 
+# Start time: 14:31:57 on Nov 03,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.testbench_aes_sbox(fast)
+# Loading work.sbox_sync(fast)
+run 10000
+# ** Note: $stop    : C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_sbox_tb.sv(68)
+#    Time: 880 ns  Iteration: 0  Instance: /testbench_aes_sbox
+# Break in Module testbench_aes_sbox at C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_sbox_tb.sv line 68
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_top.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui -voptargs=+acc work.testbench_aes_sbox
+# End time: 14:40:16 on Nov 03,2024, Elapsed time: 0:08:19
+# Errors: 0, Warnings: 2
+# vsim -gui -voptargs="+acc" work.testbench_aes_sbox 
+# Start time: 14:40:16 on Nov 03,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_aes_sbox(fast)
+# Loading work.sbox_sync(fast)
+run 10000
+# ** Note: $stop    : C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_sbox_tb.sv(76)
+#    Time: 1760 ns  Iteration: 0  Instance: /testbench_aes_sbox
+# Break in Module testbench_aes_sbox at C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_sbox_tb.sv line 76

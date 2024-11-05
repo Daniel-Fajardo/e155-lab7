@@ -1,0 +1,69 @@
+Synthesis options:
+The -a option is iCE40UP.
+The -t option is SG48.
+The -sp option is High-Performance_1.2V.
+The -p option is iCE40UP5K.
+                                                          
+
+
+##########################################################
+
+
+### Lattice Family     : iCE40UP
+
+
+### Device             : iCE40UP5K
+
+
+### Package            : SG48
+
+
+### Performance Grade  : High-Performance_1.2V
+
+
+                                                         
+
+
+INFO <35001786> - synthesis: User-Selected Strategy Settings
+Optimization goal = Area
+Top-level module name = sv.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3 (default)
+RWCheckOnRam = 0
+
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+
+Mux style = auto (Default)
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+Output HDL file name = lab7_df_impl_1.vm.
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-path C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/radiant_project/lab7_df (searchpath added)
+-path C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/radiant_project/lab7_df/impl_1 (searchpath added)
+-path C:/lscc/radiant/2024.1/ispfpga/ice40tp/data (searchpath added)
+Mixed language design
+Verilog design file = C:/lscc/radiant/2024.1/ip/pmi/pmi_iCE40UP.v
+Verilog design file = C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_core_tb.sv
+Verilog design file = C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_sbox_tb.sv
+Verilog design file = C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_spi_tb.sv
+Verilog design file = C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_top.sv
+VHDL library = pmi
+VHDL design file = C:/lscc/radiant/2024.1/ip/pmi/pmi_iCE40UP.vhd
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
