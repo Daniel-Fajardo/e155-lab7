@@ -5,6 +5,28 @@ Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 Top level modules:
 	testbench_aes_core
 
+} {} {}} C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_top.sv {1 {vlog -work work -vopt -sv -stats=none {C:\Users\danie\OneDrive\Documents\MicroP\Lab7\fpga\src\aes_top.sv}
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module aes
+-- Compiling module aes_spi
+-- Compiling module aes_core
+-- Compiling module mainfsm
+-- Compiling module sbox
+-- Compiling module sbox_sync
+-- Compiling module mixcolumns
+-- Compiling module mixcolumn
+-- Compiling module galoismult
+-- Compiling module addroundkey
+-- Compiling module shiftrows
+-- Compiling module rotword
+-- Compiling module subword
+-- Compiling module subbytes
+
+Top level modules:
+	aes
+	sbox
+	rotword
+
 } {} {}} C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_sbox_tb.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_sbox_tb.sv
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module testbench_aes_sbox

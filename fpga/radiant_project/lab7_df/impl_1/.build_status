@@ -15,9 +15,9 @@
             <Task name="PARTrace" build_result="0" update_result="2" update_time="1730671509"/>
             <Task name="IOTiming" build_result="0" update_result="2" update_time="1730671509"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="0" build_time="1730671627">
-            <Task name="Lattice_Synthesis" build_result="0" update_result="2" update_time="1730671627"/>
-            <Task name="LSE_Compile" build_result="0" update_result="2" update_time="1730671627"/>
+        <Milestone name="Synthesis" build_result="1" build_time="1730868307">
+            <Task name="Lattice_Synthesis" build_result="1" update_result="2" update_time="1730868307"/>
+            <Task name="LSE_Compile" build_result="0" update_result="2" update_time="1730868307"/>
             <Task name="SynTrace" build_result="0" update_result="2" update_time="1730671573"/>
             <Task name="SynVerilogSimFile" build_result="0" update_result="2" update_time="1730671573"/>
         </Milestone>
@@ -27,3 +27,4 @@
         <Report name="lab7_df_impl_1_syn.udb" last_build_time="0" last_build_size="0"/>
     </Strategy>
 </BuildStatus>
+ 

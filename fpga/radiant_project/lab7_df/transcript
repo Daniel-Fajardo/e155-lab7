@@ -202,3 +202,376 @@ run 10000
 # ** Note: $stop    : C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_sbox_tb.sv(76)
 #    Time: 1760 ns  Iteration: 0  Instance: /testbench_aes_sbox
 # Break in Module testbench_aes_sbox at C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_sbox_tb.sv line 76
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_top.sv failed with 3 errors.
+# 4 compiles, 1 failed with 3 errors.
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_top.sv failed with 3 errors.
+# Compile of aes_functions_tb.sv failed with 1 errors.
+# 5 compiles, 2 failed with 4 errors.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/sim/lab7_df.mpf).  File can not be renamed.
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_top.sv failed with 1 errors.
+# Compile of aes_functions_tb.sv failed with 1 errors.
+# 5 compiles, 2 failed with 2 errors.
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_top.sv failed with 2 errors.
+# Compile of aes_functions_tb.sv failed with 1 errors.
+# 5 compiles, 2 failed with 3 errors.
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_top.sv failed with 2 errors.
+# Compile of aes_functions_tb.sv failed with 1 errors.
+# 5 compiles, 2 failed with 3 errors.
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_top.sv failed with 2 errors.
+# Compile of aes_functions_tb.sv failed with 1 errors.
+# 5 compiles, 2 failed with 3 errors.
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_top.sv failed with 8 errors.
+# Compile of aes_functions_tb.sv failed with 1 errors.
+# 5 compiles, 2 failed with 9 errors.
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_top.sv failed with 1 errors.
+# Compile of aes_functions_tb.sv failed with 1 errors.
+# 5 compiles, 2 failed with 2 errors.
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_top.sv failed with 5 errors.
+# Compile of aes_functions_tb.sv failed with 1 errors.
+# 5 compiles, 2 failed with 6 errors.
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_top.sv failed with 5 errors.
+# Compile of aes_functions_tb.sv failed with 1 errors.
+# 5 compiles, 2 failed with 6 errors.
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_top.sv failed with 1 errors.
+# Compile of aes_functions_tb.sv failed with 1 errors.
+# 5 compiles, 2 failed with 2 errors.
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_top.sv failed with 4 errors.
+# Compile of aes_functions_tb.sv failed with 1 errors.
+# 5 compiles, 2 failed with 5 errors.
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_top.sv was successful.
+# Compile of aes_functions_tb.sv failed with 1 errors.
+# 5 compiles, 1 failed with 1 error.
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_top.sv was successful.
+# Compile of aes_functions_tb.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui -voptargs=+acc work.testbench_aes_addroundkey
+# End time: 21:31:35 on Nov 05,2024, Elapsed time: 54:51:19
+# Errors: 1, Warnings: 17
+# vsim -gui -voptargs="+acc" work.testbench_aes_addroundkey 
+# Start time: 21:31:35 on Nov 05,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Error: C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_functions_tb.sv(12): Module 'dut' is not defined.
+#  For instance 'addroundkey' at path 'testbench_aes_addroundkey'
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=1.
+# Error loading design
+# End time: 21:31:38 on Nov 05,2024, Elapsed time: 0:00:03
+# Errors: 1, Warnings: 2
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_top.sv was successful.
+# Compile of aes_functions_tb.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui -voptargs=+acc work.testbench_aes_addroundkey
+# vsim -gui -voptargs="+acc" work.testbench_aes_addroundkey 
+# Start time: 21:32:36 on Nov 05,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_aes_addroundkey(fast)
+# Loading work.addroundkey(fast)
+run 50
+run 5000
+# Error: cyphertext = 3243f6a8885a308d313198a2e0370734, expected 193de3bea0f4e22b9ac68d2ae9f84808
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_top.sv was successful.
+# Compile of aes_functions_tb.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_aes_addroundkey(fast)
+# Loading work.addroundkey(fast)
+run 5000
+# Testbench ran successfully
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_top.sv was successful.
+# Compile of aes_functions_tb.sv failed with 1 errors.
+# 5 compiles, 1 failed with 1 error.
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_top.sv was successful.
+# Compile of aes_functions_tb.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui -voptargs=+acc work.testbench_aes_subbytes
+# End time: 21:40:19 on Nov 05,2024, Elapsed time: 0:07:43
+# Errors: 0, Warnings: 4
+# vsim -gui -voptargs="+acc" work.testbench_aes_subbytes 
+# Start time: 21:40:19 on Nov 05,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_aes_subbytes(fast)
+# Loading work.addroundkey(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (128) does not match connection size (1) for port 'w'. The port definition is at: C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_top.sv(323).
+#    Time: 0 ns  Iteration: 0  Instance: /testbench_aes_subbytes/dut File: C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_functions_tb.sv Line: 35
+run 5000
+# Error: SRin = 193de3bea0f4e22b9ac68d2ae9f84808, expected d42711aee0bf98f1b8b45de51e415230
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_top.sv was successful.
+# Compile of aes_functions_tb.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.testbench_aes_subbytes(fast)
+# Loading work.addroundkey(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (128) does not match connection size (1) for port 'w'. The port definition is at: C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_top.sv(323).
+#    Time: 0 ns  Iteration: 0  Instance: /testbench_aes_subbytes/dut File: C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_functions_tb.sv Line: 35
+run 5000
+# Error: SRin = 193de3bea0f4e22b9ac68d2ae9f84808, expected d42711aee0bf98f1b8b45de51e415230
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_top.sv was successful.
+# Compile of aes_functions_tb.sv failed with 1 errors.
+# 5 compiles, 1 failed with 1 error.
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_top.sv was successful.
+# Compile of aes_functions_tb.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_aes_subbytes(fast)
+# Loading work.subbytes(fast)
+# Loading work.subword(fast)
+# Loading work.sbox_sync(fast)
+# ** Error (suppressible): (vsim-3839) Variable '/testbench_aes_subbytes/dut/yx0', driven via a port connection, is multiply driven. See C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_top.sv(429).
+#    Time: 0 ns  Iteration: 0  Instance: /testbench_aes_subbytes/dut File: C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_top.sv Line: 427
+# ** Error (suppressible): (vsim-3839) Variable '/testbench_aes_subbytes/dut/yx1', driven via a port connection, is multiply driven. See C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_top.sv(430).
+#    Time: 0 ns  Iteration: 0  Instance: /testbench_aes_subbytes/dut File: C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_top.sv Line: 427
+# ** Error (suppressible): (vsim-3839) Variable '/testbench_aes_subbytes/dut/yx2', driven via a port connection, is multiply driven. See C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_top.sv(431).
+#    Time: 0 ns  Iteration: 0  Instance: /testbench_aes_subbytes/dut File: C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_top.sv Line: 427
+# ** Error (suppressible): (vsim-3839) Variable '/testbench_aes_subbytes/dut/yx3', driven via a port connection, is multiply driven. See C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_top.sv(432).
+#    Time: 0 ns  Iteration: 0  Instance: /testbench_aes_subbytes/dut File: C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_top.sv Line: 427
+run 5000
+# No Design Loaded!
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_top.sv was successful.
+# Compile of aes_functions_tb.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui -voptargs=+acc work.testbench_aes_subbytes
+# vsim -gui -voptargs="+acc" work.testbench_aes_subbytes 
+# Start time: 21:40:19 on Nov 05,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=4, Warnings=2.
+# Loading sv_std.std
+# Loading work.testbench_aes_subbytes(fast)
+# Loading work.subbytes(fast)
+# Loading work.subword(fast)
+# Loading work.sbox_sync(fast)
+run 5000
+# Testbench ran successfully
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_top.sv was successful.
+# Compile of aes_functions_tb.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui -voptargs=+acc work.testbench_aes_shiftrows
+# End time: 21:53:29 on Nov 05,2024, Elapsed time: 0:13:10
+# Errors: 4, Warnings: 5
+# vsim -gui -voptargs="+acc" work.testbench_aes_shiftrows 
+# Start time: 21:53:29 on Nov 05,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_aes_shiftrows(fast)
+# Loading work.shiftrows(fast)
+run 5000
+# Error: MCin = d42711aee0bf98f1b8b45de51e415230, expected d4bf5d30e0b452aeb84111f11e2798e5
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_top.sv was successful.
+# Compile of aes_functions_tb.sv was successful.
+# 5 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_aes_shiftrows(fast)
+# Loading work.shiftrows(fast)
+run 5000
+# Error: MCin = d42711aebf98f1e05de5b8b4301e4152, expected d4bf5d30e0b452aeb84111f11e2798e5
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_top.sv failed with 4 errors.
+# Compile of aes_functions_tb.sv was successful.
+# 5 compiles, 1 failed with 4 errors.
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_top.sv was successful.
+# Compile of aes_functions_tb.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui -voptargs=+acc work.testbench_aes_shiftrows
+# End time: 22:08:10 on Nov 05,2024, Elapsed time: 0:14:41
+# Errors: 0, Warnings: 4
+# vsim -gui -voptargs="+acc" work.testbench_aes_shiftrows 
+# Start time: 22:08:10 on Nov 05,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Error (suppressible): C:\Users\danie\OneDrive\Documents\MicroP\Lab7\fpga\src\aes_top.sv(358): (vopt-7033) Variable 'y' driven in a combinational block, may not be driven by any other process. See C:\Users\danie\OneDrive\Documents\MicroP\Lab7\fpga\src\aes_top.sv(351).
+# Optimization failed
+# ** Error: (vopt-2064) Compiler back-end code generation process terminated with code 12.
+# ** Warning: (vopt-31) Unable to unlink file "C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/sim/work/@_opt/_lib.qdb".
+# ** Warning: (vopt-31) Unable to unlink file "C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/sim/work/@_opt/_lib3_0.qdb".
+# The process cannot access the file because it is being used by another process. (GetLastError() = 32)
+# ** Warning: (vopt-31) Unable to unlink file "C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/sim/work/@_opt/_lib3_0.qpg".
+# The process cannot access the file because it is being used by another process. (GetLastError() = 32)
+# ** Warning: (vopt-31) Unable to unlink file "C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/sim/work/@_opt/_lib3_0.qtl".
+# The process cannot access the file because it is being used by another process. (GetLastError() = 32)
+# ** Warning: (vopt-133) Unable to remove directory "C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/sim/work/@_opt".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=6.
+# Error loading design
+# End time: 22:08:11 on Nov 05,2024, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 7
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_top.sv was successful.
+# Compile of aes_functions_tb.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui -voptargs=+acc work.testbench_aes_shiftrows
+# vsim -gui -voptargs="+acc" work.testbench_aes_shiftrows 
+# Start time: 22:08:41 on Nov 05,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Warning: (vopt-31) Unable to unlink file "C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/sim/work/@_opt/_lib3_0.qpg".
+# ** Warning: (vopt-31) Unable to unlink file "C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/sim/work/@_opt/_lib3_0.qtl".
+# The process cannot access the file because it is being used by another process. (GetLastError() = 32)
+# ** Warning: (vopt-133) Unable to remove directory "C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/sim/work/@_opt".
+# ** Error (suppressible): C:\Users\danie\OneDrive\Documents\MicroP\Lab7\fpga\src\aes_top.sv(358): (vopt-7033) Variable 'y' driven in a combinational block, may not be driven by any other process. See C:\Users\danie\OneDrive\Documents\MicroP\Lab7\fpga\src\aes_top.sv(351).
+# Optimization failed
+# ** Error: (vopt-2064) Compiler back-end code generation process terminated with code 12.
+# ** Warning: (vopt-31) Unable to unlink file "C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/sim/work/@_opt/_lib3_0.qpg".
+# ** Warning: (vopt-31) Unable to unlink file "C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/sim/work/@_opt/_lib3_0.qtl".
+# The process cannot access the file because it is being used by another process. (GetLastError() = 32)
+# ** Warning: (vopt-133) Unable to remove directory "C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/sim/work/@_opt".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=7.
+# Error loading design
+# End time: 22:08:43 on Nov 05,2024, Elapsed time: 0:00:02
+# Errors: 2, Warnings: 9
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_top.sv was successful.
+# Compile of aes_functions_tb.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui -voptargs=+acc work.testbench_aes_shiftrows
+# vsim -gui -voptargs="+acc" work.testbench_aes_shiftrows 
+# Start time: 22:09:24 on Nov 05,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_aes_shiftrows(fast)
+# Loading work.shiftrows(fast)
+run 5000
+# Testbench ran successfully
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_top.sv was successful.
+# Compile of aes_functions_tb.sv failed with 1 errors.
+# 5 compiles, 1 failed with 1 error.
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_top.sv was successful.
+# Compile of aes_functions_tb.sv failed with 1 errors.
+# 5 compiles, 1 failed with 1 error.
+# Compile of aes_core_tb.sv was successful.
+# Compile of aes_sbox_tb.sv was successful.
+# Compile of aes_spi_tb.sv was successful.
+# Compile of aes_top.sv was successful.
+# Compile of aes_functions_tb.sv was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui -voptargs=+acc work.testbench_aes_mixcolumns
+# End time: 22:14:22 on Nov 05,2024, Elapsed time: 0:04:58
+# Errors: 0, Warnings: 6
+# vsim -gui -voptargs="+acc" work.testbench_aes_mixcolumns 
+# Start time: 22:14:22 on Nov 05,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.testbench_aes_mixcolumns(fast)
+# Loading work.mixcolumns(fast)
+# Loading work.mixcolumn(fast)
+# Loading work.galoismult(fast)
+run 5000
+# Testbench ran successfully
