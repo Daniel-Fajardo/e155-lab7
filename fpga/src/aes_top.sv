@@ -74,9 +74,16 @@ module aes_core(input  logic         clk,
                 input  logic [127:0] plaintext, 
                 output logic         done, 
                 output logic [127:0] cyphertext);
+    logic [127:0] state, roundkey, prevroundkey;
+    logic ARKen, SBen, SRen, MCen;
 
-    mainfsm mainfsm(clk,load,key,plaintext,current,done,cyphertext,KEen,ARKen,SBen,SRen,MCen)
-    addroundkey(a,w,y);
+    mainfsm mainfsm(clk,load,prevroundkey,plaintext,state,done,cyphertext,roundkey,ARKen,SBen,SRen,MCen);
+    addroundkey ARK(state,roundkey,ARKen,state);
+    subbytes SB(state,SBen,clk,state);
+    shiftrows SR(state,SRen,state);
+    mixcolumns MC(state,MCen,state);
+
+    
     
 endmodule
 
@@ -84,39 +91,133 @@ module mainfsm(input  logic         clk,
                 input  logic         load,
                 input  logic [127:0] key,
                 input  logic [127:0] plaintext,
-                input  logic [127:0] current,
+                input  logic [127:0] state,
                 output logic         done, 
                 output logic [127:0] cyphertext,
                 output logic [127:0] roundkey,
                 output logic ARKen, SBen, SRen, MCen);
-    logic state, nextstate;
-    logic [3:0] counter;
+    logic [3:0] round, nextround;
+    logic [3:0] cycle;
 
     always_ff @(posedge clk)
-      if (load) begin 
-        state <= nextstate;
-        couter <= 0;
+      if (load) begin
+        cycle <= 0;
+      end
+      else if (cycle == 1) begin
+        round <= nextround;
+        cycle <= 0;
       end
       else begin
-        state <= nextstate;
-        counter <= counter + 1;
+        cycle <= cycle + 1;
       end
     
     // key expansion logic input: key, output: roundkey
-    
+    keyexpansion KE(round,roundkey,clk,nextroundkey)
 
-    // nextstate logic
+    // nextround logic
     always_comb
-      case (state)
-        // keyexpansion
-        0: w[127:0] <= key[127:0];
-        //
-        1: 
+      case (round)
+        0: begin if (cycle==0) nextround <= 0;
+          else nextround <= 1; end
+        1: begin if (cycle==0) nextround <= 1;
+          else nextround <= 2; end
+        2: begin if (cycle==0) nextround <= 2;
+          else nextround <= 3; end
+        3: begin if (cycle==0) nextround <= 3;
+          else nextround <= 4; end
+        4: begin if (cycle==0) nextround <= 4;
+          else nextround <= 5; end
+        5: begin if (cycle==0) nextround <= 5;
+          else nextround <= 6; end
+        6: begin if (cycle==0) nextround <= 6;
+          else nextround <= 7; end
+        7: begin if (cycle==0) nextround <= 7;
+          else nextround <= 8; end
+        8: begin if (cycle==0) nextround <= 8;
+          else nextround <= 9; end
+        9: begin if (cycle==0) nextround <= 9;
+          else nextround <= 10; end
+        10: begin if (cycle==0) nextround <= 10;
+          else nextround <= 0; end
+        default: nextround <= 0;
       endcase
     
-    // output logic
+
+    // enable output logic
     always_comb
-    
+      case (round)
+        0: begin ARKen <= 1; SBen <= 0; SRen <= 0; MCen <= 0; end // only ARK is enabled
+        1: begin ARKen <= 1; SBen <= 1; SRen <= 1; MCen <= 1; end // all are enabled for rounds 1-9
+        2: begin ARKen <= 1; SBen <= 1; SRen <= 1; MCen <= 1; end
+        3: begin ARKen <= 1; SBen <= 1; SRen <= 1; MCen <= 1; end
+        4: begin ARKen <= 1; SBen <= 1; SRen <= 1; MCen <= 1; end
+        5: begin ARKen <= 1; SBen <= 1; SRen <= 1; MCen <= 1; end
+        6: begin ARKen <= 1; SBen <= 1; SRen <= 1; MCen <= 1; end
+        7: begin ARKen <= 1; SBen <= 1; SRen <= 1; MCen <= 1; end
+        8: begin ARKen <= 1; SBen <= 1; SRen <= 1; MCen <= 1; end
+        9: begin ARKen <= 1; SBen <= 1; SRen <= 1; MCen <= 1; end
+        10: begin ARKen <= 1; SBen <= 1; SRen <= 1; MCen <= 0; end // all but MC are enabled
+        default: begin ARKen <= 0; SBen <= 0; SRen <= 0; MCen <= 0; end // none are enabled
+      endcase
+
+    // roundkey and cyphertext output logic
+    always_comb
+      case (round)
+        0: cyphertext <= plaintext; // in first round, initial plaintext is output
+        1: 
+        2:
+        3:
+        4:
+        5:
+        6:
+        7:
+        8:
+        9:
+        10:
+        default:
+      endcase
+endmodule
+
+module keyexpansion(input logic [3:0] round,
+                    input logic [127:0] roundkey,
+                    input logic clk,
+                    output logic [127:0] nextroundkey)
+    logic [3:0] prevround;
+    logic [31:0] temp, intemp;
+    logic [31:0] Rcon;
+
+    // Round constants
+    if (round==1) Rcon <= 8'h01000000;
+    if (round==2) Rcon <= 8'h02000000;
+    if (round==3) Rcon <= 8'h04000000;
+    if (round==4) Rcon <= 8'h08000000;
+    if (round==5) Rcon <= 8'h10000000;
+    if (round==6) Rcon <= 8'h20000000;
+    if (round==7) Rcon <= 8'h40000000;
+    if (round==8) Rcon <= 8'h80000000;
+    if (round==9) Rcon <= 8'h1b000000;
+    if (round==10) Rcon <= 8'h36000000;
+
+    if (round!=prevround) begin
+      rotword rw(roundkey[127:96],intemp[31:0]); // rotate, subword, XOR with Rcon only done to w(i/Nk)
+      subword sw(intemp[31:0],clk,temp[31:0]);
+
+      assign nextroundkey = roundkey // do not update roundkey
+    end
+    if (round==prevround) begin
+      assign temp[31:0] = temp[31:0] ^ Rcon;
+      assign nextroundkey[31:0] = temp[31:0] ^ roundkey[31:0];
+      assign nextroundkey[63:32] = nextroundkey[31:0] ^ roundkey[63:32];
+      assign nextroundkey[95:64] = nextroundkey[63:32] ^ roundkey[95:64];
+      assign nextroundkey[127:96] = nextroundkey[95:64] ^ roundkey[31:0];
+    end
+    assign prevround = round;
+
+    always_comb
+      case (round)
+
+      endcase
+
 endmodule
 // sbox
 //   Infamous AES byte substitutions with magic numbers
@@ -288,7 +389,8 @@ endmodule
 // subword
 //   subword([a0,...,a3]) = [sbox(a0),sbox(a1),sbox(a2),sbox(a3)]
 module subword(input logic [31:0] a,
-                  output logic [31:0 y]);
+              input logic clk,
+              output logic [31:0 y]);
     logic [7:0] a0, a1, a2, a3, y0, y1, y2, y3;
     assign {a0, a1, a2, a3} = a;
 
@@ -304,6 +406,7 @@ endmodule
 //   calls subword 4 times to modulate full 128-bit state
 module subbytes(input logic [127:0] a,
                 input logic SBen,
+                input logic clk,
                 output logic [127:0] y)
     logic [31:0] ax0, ax1, ax2, ax3;
     logic [31:0] yx0, yx1, yx2, yx3;
