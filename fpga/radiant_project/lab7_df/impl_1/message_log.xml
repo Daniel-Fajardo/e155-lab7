@@ -325,12 +325,465 @@
             <Navigation>17</Navigation>
         </Message>
         <Message>
-            <ID>35901137</ID>
-            <Severity>4096</Severity>
-            <Dynamic>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv(168): </Dynamic>
-            <Dynamic>:</Dynamic>
+            <ID>35921014</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/lscc/radiant/2024.1/ip/pmi/pmi_ice40up.vhd(4): </Dynamic>
+            <Dynamic>components</Dynamic>
+            <Navigation>c:/lscc/radiant/2024.1/ip/pmi/pmi_ice40up.vhd</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35921504</ID>
+            <Severity>1</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/radiant_project/lab7_df/impl_1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv(8): </Dynamic>
+            <Dynamic>aes</Dynamic>
             <Navigation>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv</Navigation>
-            <Navigation>168</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv(25): </Dynamic>
+            <Dynamic>aes_spi</Dynamic>
+            <Navigation>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv</Navigation>
+            <Navigation>25</Navigation>
+        </Message>
+        <Message>
+            <ID>35901318</ID>
+            <Severity>32</Severity>
+            <Dynamic>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv(84): </Dynamic>
+            <Dynamic>cyphertext</Dynamic>
+            <Navigation>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv</Navigation>
+            <Navigation>84</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv(71): </Dynamic>
+            <Dynamic>aes_core</Dynamic>
+            <Navigation>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv</Navigation>
+            <Navigation>71</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv(90): </Dynamic>
+            <Dynamic>mainfsm</Dynamic>
+            <Navigation>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv</Navigation>
+            <Navigation>90</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>16</Severity>
+            <Dynamic>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv(111): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Navigation>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv</Navigation>
+            <Navigation>111</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv(181): </Dynamic>
+            <Dynamic>keyexpansion</Dynamic>
+            <Navigation>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv</Navigation>
+            <Navigation>181</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv(398): </Dynamic>
+            <Dynamic>rotword</Dynamic>
+            <Navigation>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv</Navigation>
+            <Navigation>398</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv(413): </Dynamic>
+            <Dynamic>subword</Dynamic>
+            <Navigation>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv</Navigation>
+            <Navigation>413</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv(252): </Dynamic>
+            <Dynamic>sbox_sync</Dynamic>
+            <Navigation>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv</Navigation>
+            <Navigation>252</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>16</Severity>
+            <Dynamic>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv(259): </Dynamic>
+            <Dynamic>sbox</Dynamic>
+            <Navigation>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv</Navigation>
+            <Navigation>259</Navigation>
+        </Message>
+        <Message>
+            <ID>35901899</ID>
+            <Severity>16</Severity>
+            <Dynamic>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv(229): </Dynamic>
+            <Navigation>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv</Navigation>
+            <Navigation>229</Navigation>
+        </Message>
+        <Message>
+            <ID>35901330</ID>
+            <Severity>16</Severity>
+            <Dynamic>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv(115): </Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>128</Dynamic>
+            <Dynamic>nextroundkey</Dynamic>
+            <Navigation>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv</Navigation>
+            <Navigation>115</Navigation>
+        </Message>
+        <Message>
+            <ID>35901330</ID>
+            <Severity>16</Severity>
+            <Dynamic>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv(80): </Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>128</Dynamic>
+            <Dynamic>state</Dynamic>
+            <Navigation>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv</Navigation>
+            <Navigation>80</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv(429): </Dynamic>
+            <Dynamic>subbytes</Dynamic>
+            <Navigation>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv</Navigation>
+            <Navigation>429</Navigation>
+        </Message>
+        <Message>
+            <ID>35901330</ID>
+            <Severity>16</Severity>
+            <Dynamic>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv(81): </Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>128</Dynamic>
+            <Dynamic>a</Dynamic>
+            <Navigation>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv</Navigation>
+            <Navigation>81</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv(346): </Dynamic>
+            <Dynamic>shiftrows</Dynamic>
+            <Navigation>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv</Navigation>
+            <Navigation>346</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv(273): </Dynamic>
+            <Dynamic>mixcolumns</Dynamic>
+            <Navigation>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv</Navigation>
+            <Navigation>273</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv(292): </Dynamic>
+            <Dynamic>mixcolumn</Dynamic>
+            <Navigation>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv</Navigation>
+            <Navigation>292</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv(316): </Dynamic>
+            <Dynamic>galoismult</Dynamic>
+            <Navigation>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv</Navigation>
+            <Navigation>316</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv(329): </Dynamic>
+            <Dynamic>addroundkey</Dynamic>
+            <Navigation>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv</Navigation>
+            <Navigation>329</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>16</Severity>
+            <Dynamic>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv(77): </Dynamic>
+            <Dynamic>prevroundkey[127]</Dynamic>
+            <Navigation>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv</Navigation>
+            <Navigation>77</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>16</Severity>
+            <Dynamic>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv(80): </Dynamic>
+            <Dynamic>state</Dynamic>
+            <Navigation>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv</Navigation>
+            <Navigation>80</Navigation>
+        </Message>
+        <Message>
+            <ID>35931038</ID>
+            <Severity>16</Severity>
+            <Dynamic>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv(259): </Dynamic>
+            <Dynamic>sbox_original_ramnet</Dynamic>
+            <Navigation>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv</Navigation>
+            <Navigation>259</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>16</Severity>
+            <Dynamic>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv(77): </Dynamic>
+            <Dynamic>\core/roundkey[127]</Dynamic>
+            <Navigation>c:/users/danie/onedrive/documents/microp/lab7/fpga/src/aes_top.sv</Navigation>
+            <Navigation>77</Navigation>
+        </Message>
+        <Message>
+            <ID>35935040</ID>
+            <Severity>16</Severity>
+            <Dynamic>\spi/wasdone</Dynamic>
+            <Dynamic>Zero</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>256</Severity>
+            <Dynamic>driving \core/SB/yx0[31:0]</Dynamic>
+            <Dynamic>7, 4, 3, 2</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001748</ID>
+            <Severity>256</Severity>
+            <Dynamic>driving \core/SB/yx0[31:0]</Dynamic>
+            <Dynamic>6, 5, 1, 0</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>256</Severity>
+            <Dynamic>\core/SB/subword0/byte2/y</Dynamic>
+            <Dynamic>15, 12, 11, 10</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001748</ID>
+            <Severity>256</Severity>
+            <Dynamic>\core/SB/subword0/byte2/y</Dynamic>
+            <Dynamic>14, 13, 9, 8</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>256</Severity>
+            <Dynamic>\core/SB/subword0/byte1/y</Dynamic>
+            <Dynamic>23, 20, 19, 18</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001748</ID>
+            <Severity>256</Severity>
+            <Dynamic>\core/SB/subword0/byte1/y</Dynamic>
+            <Dynamic>22, 21, 17, 16</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>256</Severity>
+            <Dynamic>\core/SB/subword0/byte0/y</Dynamic>
+            <Dynamic>31, 28, 27, 26</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001748</ID>
+            <Severity>256</Severity>
+            <Dynamic>\core/SB/subword0/byte0/y</Dynamic>
+            <Dynamic>30, 29, 25, 24</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>256</Severity>
+            <Dynamic>\core/SB/subword3/byte0/y</Dynamic>
+            <Dynamic>31, 28, 27, 26</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001748</ID>
+            <Severity>256</Severity>
+            <Dynamic>\core/SB/subword3/byte0/y</Dynamic>
+            <Dynamic>30, 29, 25, 24</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>256</Severity>
+            <Dynamic>\core/SB/subword2/byte0/y</Dynamic>
+            <Dynamic>31, 28, 27, 26</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001748</ID>
+            <Severity>256</Severity>
+            <Dynamic>\core/SB/subword2/byte0/y</Dynamic>
+            <Dynamic>30, 29, 25, 24</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>256</Severity>
+            <Dynamic>\core/SB/subword1/byte0/y</Dynamic>
+            <Dynamic>31, 28, 27, 26</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001748</ID>
+            <Severity>256</Severity>
+            <Dynamic>\core/SB/subword1/byte0/y</Dynamic>
+            <Dynamic>30, 29, 25, 24</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>256</Severity>
+            <Dynamic>driving \core/SB/yx3[31:0]</Dynamic>
+            <Dynamic>7, 4, 3, 2</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001748</ID>
+            <Severity>256</Severity>
+            <Dynamic>driving \core/SB/yx3[31:0]</Dynamic>
+            <Dynamic>6, 5, 1, 0</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>256</Severity>
+            <Dynamic>\core/SB/subword3/byte2/y</Dynamic>
+            <Dynamic>15, 12, 11, 10</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001748</ID>
+            <Severity>256</Severity>
+            <Dynamic>\core/SB/subword3/byte2/y</Dynamic>
+            <Dynamic>14, 13, 9, 8</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>256</Severity>
+            <Dynamic>\core/SB/subword3/byte1/y</Dynamic>
+            <Dynamic>23, 20, 19, 18</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001748</ID>
+            <Severity>256</Severity>
+            <Dynamic>\core/SB/subword3/byte1/y</Dynamic>
+            <Dynamic>22, 21, 17, 16</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>256</Severity>
+            <Dynamic>driving \core/SB/yx2[31:0]</Dynamic>
+            <Dynamic>7, 4, 3, 2</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001748</ID>
+            <Severity>256</Severity>
+            <Dynamic>driving \core/SB/yx2[31:0]</Dynamic>
+            <Dynamic>6, 5, 1, 0</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>256</Severity>
+            <Dynamic>\core/SB/subword2/byte2/y</Dynamic>
+            <Dynamic>15, 12, 11, 10</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001748</ID>
+            <Severity>256</Severity>
+            <Dynamic>\core/SB/subword2/byte2/y</Dynamic>
+            <Dynamic>14, 13, 9, 8</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>256</Severity>
+            <Dynamic>\core/SB/subword2/byte1/y</Dynamic>
+            <Dynamic>23, 20, 19, 18</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001748</ID>
+            <Severity>256</Severity>
+            <Dynamic>\core/SB/subword2/byte1/y</Dynamic>
+            <Dynamic>22, 21, 17, 16</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>256</Severity>
+            <Dynamic>driving \core/SB/yx1[31:0]</Dynamic>
+            <Dynamic>7, 4, 3, 2</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001748</ID>
+            <Severity>256</Severity>
+            <Dynamic>driving \core/SB/yx1[31:0]</Dynamic>
+            <Dynamic>6, 5, 1, 0</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>256</Severity>
+            <Dynamic>\core/SB/subword1/byte2/y</Dynamic>
+            <Dynamic>15, 12, 11, 10</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001748</ID>
+            <Severity>256</Severity>
+            <Dynamic>\core/SB/subword1/byte2/y</Dynamic>
+            <Dynamic>14, 13, 9, 8</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>256</Severity>
+            <Dynamic>\core/SB/subword1/byte1/y</Dynamic>
+            <Dynamic>23, 20, 19, 18</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001748</ID>
+            <Severity>256</Severity>
+            <Dynamic>\core/SB/subword1/byte1/y</Dynamic>
+            <Dynamic>22, 21, 17, 16</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002028</ID>
+            <Severity>256</Severity>
+            <Dynamic>sdi</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002039</ID>
+            <Severity>1</Severity>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>sdi</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>sdi</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>sdi</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>sdi</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Map">
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>sdi</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>sdi</Dynamic>
         </Message>
     </Task>
 </BaliMessageLog>

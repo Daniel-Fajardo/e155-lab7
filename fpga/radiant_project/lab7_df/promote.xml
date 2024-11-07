@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<userSetting name="C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/radiant_project/lab7_df/promote.xml" version="Diamond (64-bit) 2024.1.0.34.2" date="Tue Nov 05 20:45:07 2024" vendor="Lattice Semiconductor Corporation" >
+<userSetting name="C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/radiant_project/lab7_df/promote.xml" version="Diamond (64-bit) 2024.1.0.34.2" date="Wed Nov 06 14:58:45 2024" vendor="Lattice Semiconductor Corporation" >
   <msg mid="35901328" type="Info" internal="true" />
+  <msg mid="35901209" type="Warning" internal="true" />
+  <msg mid="35921504" type="Info" internal="true" />
+  <msg mid="35901318" type="Warning" internal="true" />
+  <msg mid="35931002" type="Warning" internal="true" />
+  <msg mid="35901899" type="Warning" internal="true" />
+  <msg mid="35931038" type="Warning" internal="true" />
 </userSetting>

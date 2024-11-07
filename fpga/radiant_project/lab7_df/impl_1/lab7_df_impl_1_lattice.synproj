@@ -46,7 +46,7 @@
 
 
 -path "C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/radiant_project/lab7_df"
--top aes_top.sv
+-top aes
 -udb "lab7_df_impl_1_rtl.udb"
 -output_hdl "lab7_df_impl_1.vm"
 

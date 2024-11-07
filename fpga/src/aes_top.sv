@@ -74,16 +74,14 @@ module aes_core(input  logic         clk,
                 input  logic [127:0] plaintext, 
                 output logic         done, 
                 output logic [127:0] cyphertext);
-    logic [127:0] roundkey, prevroundkey, SBin, SRin, MCin, ARKin;
+    logic [127:0] roundkey, nextroundkey, SBin, SRin, MCin, ARKin;
     logic ARKen, SBen, SRen, MCen;
 
-    mainfsm mainfsm(clk,load,prevroundkey,plaintext,state,done,cyphertext,roundkey,ARKen,SBen,SRen,MCen);
+    mainfsm mainfsm(clk,load,key,plaintext,done,nextroundkey,ARKen,SBen,SRen,MCen);
     subbytes SB(state,SBen,clk,SBin);
     shiftrows SR(SBin,SRen,MCin);
     mixcolumns MC(MCin,MCen,ARKin);
     addroundkey ARK(ARKin,roundkey,ARKen,cyphertext);
-
-    
     
 endmodule
 
@@ -91,16 +89,15 @@ module mainfsm(input  logic         clk,
                 input  logic         load,
                 input  logic [127:0] key,
                 input  logic [127:0] plaintext,
-                input  logic [127:0] state,
-                output logic         done, 
-                output logic [127:0] cyphertext,
-                output logic [127:0] roundkey,
+                output logic         done,
+                output logic [127:0] nextroundkey,
                 output logic ARKen, SBen, SRen, MCen);
     logic [3:0] round, nextround;
     logic [3:0] cycle;
 
     always_ff @(posedge clk)
       if (load) begin
+        roundkey <= key;
         cycle <= 0;
       end
       else if (cycle == 1) begin
@@ -178,48 +175,71 @@ module mainfsm(input  logic         clk,
       endcase*/
 endmodule
 
-/*module keyexpansion(input logic [3:0] round,
+module keyexpansion(input logic [3:0] round,
                     input logic [127:0] roundkey,
                     input logic clk,
                     output logic [127:0] nextroundkey);
     logic [3:0] prevround;
-    logic [31:0] temp, intemp;
-    logic [31:0] Rcon;
+    logic [31:0] temp, rwout, swin, swout, Rcon;
+    logic [127:0] tempkey;
+
+    assign prevround = 0;
+    
+    rotword rw(roundkey[31:0],rwout[31:0]); // rotate, subword, XOR with Rcon only done to w(i/Nk)
+    assign swin = rwout;
+    subword sw(swin[31:0],clk,swout[31:0]);
+    
+    always_comb
+      case (round)
+        // Round constants
+        0: Rcon <= 32'h00000000;
+        1: Rcon <= 32'h01000000;
+        2: Rcon <= 32'h02000000;
+        3: Rcon <= 32'h04000000;
+        4: Rcon <= 32'h08000000;
+        5: Rcon <= 32'h10000000;
+        6: Rcon <= 32'h20000000;
+        7: Rcon <= 32'h40000000;
+        8: Rcon <= 32'h80000000;
+        9: Rcon <= 32'h1b000000;
+        10: Rcon <= 32'h36000000;
+        default: Rcon <= 32'h00000000;
+      endcase
 
     always_comb begin
-      // Round constants
-      if (round==1) Rcon <= 32'h01000000;
-      if (round==2) Rcon <= 32'h02000000;
-      if (round==3) Rcon <= 32'h04000000;
-      if (round==4) Rcon <= 32'h08000000;
-      if (round==5) Rcon <= 32'h10000000;
-      if (round==6) Rcon <= 32'h20000000;
-      if (round==7) Rcon <= 32'h40000000;
-      if (round==8) Rcon <= 32'h80000000;
-      if (round==9) Rcon <= 32'h1b000000;
-      if (round==10) Rcon <= 32'h36000000;
-
-      if (round!=prevround) begin
-        rotword rw(roundkey[127:96],intemp[31:0]); // rotate, subword, XOR with Rcon only done to w(i/Nk)
-        subword sw(intemp[31:0],clk,temp[31:0]);
-
-        assign nextroundkey = roundkey; // do not update roundkey
-      end
-      if (round==prevround) begin
-        assign temp[31:0] = temp[31:0] ^ Rcon;
-        assign nextroundkey[31:0] = temp[31:0] ^ roundkey[31:0];
-        assign nextroundkey[63:32] = nextroundkey[31:0] ^ roundkey[63:32];
-        assign nextroundkey[95:64] = nextroundkey[63:32] ^ roundkey[95:64];
-        assign nextroundkey[127:96] = nextroundkey[95:64] ^ roundkey[31:0];
-      end
-      assign prevround = round;
-
-      always_comb
-        case (round)
-
-        endcase
+      temp[31:0] = swout[31:0] ^ Rcon;
+      tempkey[127:96] = temp[31:0] ^ roundkey[127:96];
+      tempkey[95:64] = tempkey[127:96] ^ roundkey[95:64];
+      tempkey[63:32] = tempkey[95:64] ^ roundkey[63:32];
+      tempkey[31:0] = tempkey[63:32] ^ roundkey[31:0];
     end
-endmodule*/
+
+    always_ff @(posedge clk) begin
+      if (round!=prevround) nextroundkey = tempkey;
+      else nextroundkey = roundkey;
+    end
+    
+
+    /*always_comb begin
+      if (round==prevround) begin
+        temp[31:0] = swout[31:0] ^ Rcon;
+        nextroundkey[127:96] = temp[31:0] ^ roundkey[127:96];
+        nextroundkey[95:64] = nextroundkey[127:96] ^ roundkey[95:64];
+        nextroundkey[63:32] = nextroundkey[95:64] ^ roundkey[63:32];
+        nextroundkey[31:0] = nextroundkey[63:32] ^ roundkey[31:0];
+        prevround = round;
+      end
+      else if (round!=prevround) begin
+        nextroundkey = roundkey;
+        prevround = round;
+      end
+      else begin
+        nextroundkey = roundkey; // do not update roundkey
+        prevround = 15;
+      end
+    end*/
+    
+endmodule
 
 // sbox
 //   Infamous AES byte substitutions with magic numbers
@@ -271,10 +291,8 @@ module mixcolumns(input  logic [127:0] a,
     mixcolumn mc2(a[63:32],  y1);
     mixcolumn mc3(a[31:0],   y0);
     always_comb begin
-      if (MCen) begin
-        assign y = {y3, y2, y1, y0};
-      end
-      else assign y = a; // do not modulate state if not enabled
+      if (MCen) y = {y3, y2, y1, y0};
+      else y = a; // do not modulate state if not enabled
     end
 endmodule
 
@@ -324,8 +342,8 @@ module addroundkey(input logic [127:0] a,
                   input logic ARKen,
                   output logic [127:0] y);
     always_comb begin
-      if (ARKen) assign y = a ^ w;
-      else assign y = a; // do not modulate state if not enabled
+      if (ARKen) y = a ^ w;
+      else y = a; // do not modulate state if not enabled
     end
 endmodule
 
@@ -433,7 +451,7 @@ module subbytes(input logic [127:0] a,
     subword subword3(ax3,clk,yx3);
 
     always_comb begin
-      if (SBen) assign y = {yx0, yx1, yx2, yx3};
-      else assign y = a; // do not modulate state if not enabled
+      if (SBen) y = {yx0, yx1, yx2, yx3};
+      else y = a; // do not modulate state if not enabled
     end
 endmodule

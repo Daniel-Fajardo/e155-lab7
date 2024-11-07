@@ -7,15 +7,12 @@ Starting: parse design source files
 (VERI-1482) Analyzing Verilog file 'C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_top.sv'
 INFO <2049992> - C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_top.sv(80,53-80,58) (VERI-2561) undeclared symbol 'state', assumed default net type 'wire'
 INFO <2049992> - C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_top.sv(115,40-115,52) (VERI-2561) undeclared symbol 'nextroundkey', assumed default net type 'wire'
-ERROR <2049990> - C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_top.sv(168,10-168,11) (VERI-1137) syntax error near ':'
-ERROR <2049990> - C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_top.sv(170,10-172,11) (VERI-1020) default case should appear only once
-ERROR <2049990> - C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_top.sv(172,10-174,11) (VERI-1020) default case should appear only once
-ERROR <2049990> - C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_top.sv(174,10-176,12) (VERI-1020) default case should appear only once
-ERROR <2049990> - C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_top.sv(176,11-178,14) (VERI-1020) default case should appear only once
-ERROR <2049990> - C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_top.sv(90,1-179,10) (VERI-1072) module 'mainfsm' is ignored due to previous errors
-ERROR <2049990> - C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_top.sv(185,5-185,10) (VERI-1137) syntax error near 'logic'
-ERROR <2049990> - C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_top.sv(185,5-185,10) (VERI-2344) SystemVerilog keyword 'logic' used in incorrect context
-(VERI-1483) Verilog file 'C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_top.sv' ignored due to errors
-Done: design load finished with (8) errors, and (0) warnings
+INFO <2049992> - C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_top.sv(8,8-8,11) (VERI-1018) compiling module 'aes'
+WARNING <2049991> - C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_top.sv(80,53-80,58) (VERI-1330) actual bit length 1 differs from formal bit length 128 for port 'state'
+WARNING <2049991> - C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_top.sv(115,40-115,52) (VERI-1330) actual bit length 1 differs from formal bit length 128 for port 'nextroundkey'
+WARNING <2049991> - C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_top.sv(81,17-81,22) (VERI-1330) actual bit length 1 differs from formal bit length 128 for port 'a'
+WARNING <2049991> - C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_top.sv(84,42-84,52) (VERI-1318) variable 'cyphertext' might have multiple concurrent drivers
+INFO <2049992> - C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_top.sv(80,64-80,74) (VERI-1972) found another concurrent driver of 'cyphertext' here
+Done: design load finished with (0) errors, and (4) warnings
 
 </PRE></BODY></HTML>

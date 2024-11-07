@@ -1,0 +1,42 @@
+---------------------------------------------------
+Report for cell aes
+   Instance path: aes
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                 IOLGC	       1.00        100.0
+                                  LUT4	         21        100.0
+                               LUTGATE	         21        100.0
+                                 IOREG	          1        100.0
+                                 IOBUF	          5        100.0
+                                PFUREG	          9        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                              aes_core	          1        90.5
+                               aes_spi	          1         0.0
+---------------------------------------------------
+Report for cell aes_core
+   Instance path: aes/core
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         19        90.5
+                               LUTGATE	         19        90.5
+                                PFUREG	          8        88.9
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                               mainfsm	          1        90.5
+---------------------------------------------------
+Report for cell mainfsm
+   Instance path: aes/core/mainfsm
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         19        90.5
+                               LUTGATE	         19        90.5
+                                PFUREG	          8        88.9
+---------------------------------------------------
+Report for cell aes_spi
+   Instance path: aes/spi
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                 IOLGC	       1.00        100.0
+                                 IOREG	          1        100.0
+                                PFUREG	          1        11.1

@@ -11,6 +11,7 @@ Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module aes_spi
 -- Compiling module aes_core
 -- Compiling module mainfsm
+-- Compiling module keyexpansion
 -- Compiling module sbox
 -- Compiling module sbox_sync
 -- Compiling module mixcolumns
@@ -25,7 +26,6 @@ Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 Top level modules:
 	aes
 	sbox
-	rotword
 
 } {} {}} C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_sbox_tb.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/danie/OneDrive/Documents/MicroP/Lab7/fpga/src/aes_sbox_tb.sv
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024

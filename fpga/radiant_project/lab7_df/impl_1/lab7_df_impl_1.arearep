@@ -1,0 +1,44 @@
+----------------------------------------------------------------------
+Report for cell aes.TECH
+Register bits:  9 of 5280 (0.170%)
+I/O cells:      5
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         9          100.0
+                                 IB         3          100.0
+                                INV         1          100.0
+                              IOL_B         1          100.0
+                               LUT4        20          100.0
+                                 OB         2          100.0
+SUB MODULES
+                           aes_core         1
+                            aes_spi         1
+                            mainfsm         1
+                              TOTAL        39
+----------------------------------------------------------------------
+Report for cell aes_core.v1
+Instance Path : core
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         8           88.9
+                               LUT4        20          100.0
+SUB MODULES
+                            mainfsm         1
+                              TOTAL        29
+----------------------------------------------------------------------
+Report for cell mainfsm.v1
+Instance Path : core.mainfsm
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         8           88.9
+                               LUT4        20          100.0
+                              TOTAL        28
+----------------------------------------------------------------------
+Report for cell aes_spi.v1
+Instance Path : spi
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         1           11.1
+                                INV         1          100.0
+                              IOL_B         1          100.0
+                              TOTAL         3
